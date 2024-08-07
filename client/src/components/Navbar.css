@@ -1,0 +1,55 @@
+/* Navbar.css */
+
+
+.navbar {
+    height: 20px; /* Set a fixed height for the navbar */
+    min-height: 33px; /* Ensure the navbar doesn't shrink below this height */
+    padding: 0.5rem 1rem; /* Adjust padding if needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Adjust these sizes as needed */
+.navbar-logo {
+    width: 80px; /* Decrease the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #fff !important;
+    font-size: 0.8rem; /* Decrease the font size of navbar-brand */
+   
+}
+
+.nav-link {
+    font-size: 0.8rem; /* Decrease the font size of nav-links */
+    margin-right: 0.5rem; /* Decrease the margin-right for nav-links */
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #b3b3b3 !important;
+}
+
+
+
+.btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+    border-color: #28a745;
+}
+
+/* Smaller navbar height */
+
+
+
+
+
+
+

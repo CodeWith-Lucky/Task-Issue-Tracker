@@ -1,0 +1,30 @@
+{
+  "name": "task-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "server": "node server/app.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mssql": "^11.0.1",
+    "nodemon": "^3.1.4",
+    "react-modal": "^3.16.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,52 @@
+/* AddTask.css */
+.form-container {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
+  
+}
+/* Ensure uniform height and padding for all form controls */
+.form-control,
+.form-select {
+  max-width: 100%;
+
+  height: 28px;
+  padding: 6px 12px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.mb-3{
+  margin-bottom: 0.2rem;
+}
+/* Reduce gap between rows */
+.row {
+  margin-bottom: 10px; /* Adjust the bottom margin for rows */
+}
+
+/* Form label styling for consistency */
+.form-label {
+  font-size: smaller;
+  font-weight: bold;
+  margin-bottom: 1px; /* Reduce the gap between label and input */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-control,
+  .form-select {
+    width: 100%;
+    
+  }
+}
+
+
+

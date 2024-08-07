@@ -1,0 +1,222 @@
+/* Add this to your TaskTable.css or inline styles */
+
+h5{
+    height: 20px !important;
+}
+.container.full {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #f8f9fa;
+    z-index: 1000;
+    padding: 5px;
+    margin: 0px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-container {
+    font-size: 0.7rem;
+    margin-top: 0%;
+    padding-top: -0px;
+   height: calc(100vh - 100px); /* Adjust based on header + filter heights */
+    overflow-y: auto;
+}
+.filters-container {
+    font-size: 0.7rem;
+    position: sticky;
+    top:0px; /* Adjust based on header height */
+    background-color: #ffffff;
+    z-index: 1000;
+    padding: 0px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+ 
+  
+}
+.filter-item {
+    font-size: 0.7rem;
+    flex: 1 1 calc(33.333% - 20px); /* Adjust width as needed */
+    margin-bottom: 0px;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0px;
+}
+
+.table th, .table td {
+    font-size: 0.7rem;
+    padding: 3px;
+    border: 1px solid #ddd;
+    text-align: left;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.table thead {
+    background-color: #f8f9fa;
+}
+
+.table th {
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #e9ecef;
+}
+
+.table .btn {
+    margin: 0 5px; /* Space between buttons */
+}
+
+.table .btn-sm {
+    padding: 2px 4px; /* Smaller button padding */
+}
+
+.table .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.table .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.table .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.table .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+
+
+
+/* TableTaskList.css */
+
+.filters-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.1rem; /* Adjust the gap between filters */
+    margin-top: 1rem; /* Adjust the margin as needed */
+}
+
+.filter-item {
+    font-size: 0.9rem;
+    flex: 1; /* Make all filter items take up equal space */
+    min-width: 80px; /* Adjust the minimum width as needed */
+}
+
+.filter-item label {
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 0.5rem; /* Adjust the margin as needed */
+}
+
+.filter-item .form-control,
+.filter-item .form-select {
+    width: 80%;
+    height: 30px;
+    font-size: 0.8rem;
+}
+
+
+
+/* TableTaskList.css */
+/* TableTaskList.css */
+
+.text-red {
+    color: #ff0000; /* Red text color */
+}
+
+
+
+/* Responsive styles */
+
+
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 0px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.page-item {
+    margin: 0 2px;
+}
+
+.page-link {
+    padding: 8px 12px;
+    cursor: pointer;
+    color: #007bff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.page-item.active .page-link {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}
+
+.page-link:hover {
+    background-color: #e9ecef;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* Media query for screens with a width of 1920px or larger */
+@media (max-width: 1920px) {
+    .filters-container {
+        font-size: 1rem; /* Increase font size for better readability */
+    }
+
+    .filter-item {
+        flex: 1 1 calc(25% - 10px); /* Make filter items wider */
+        margin-bottom: 10px;
+    }
+
+    .table-container {
+        font-size: 1rem; /* Increase font size for table content */
+        height: calc(100vh - 150px); /* Adjust height for table */
+    }
+
+    .table th,
+    .table td {
+        font-size: 1rem; /* Increase font size for table cells */
+        padding: 6px; /* Adjust padding */
+    }
+
+    .container.full {
+        padding: 0 20px; /* Add some padding to the container */
+    }
+
+    .header {
+        padding: 10px; /* Increase padding for header */
+    }
+}
