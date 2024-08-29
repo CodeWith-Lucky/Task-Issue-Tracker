@@ -1,0 +1,11 @@
+.custom{
+    margin-top: 40px;
+}
+
+
+@media (max-width:1920px) {
+    .custom{
+        margin-top: 60px;
+    }
+    
+}

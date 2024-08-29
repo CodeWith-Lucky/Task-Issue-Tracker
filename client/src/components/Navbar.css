@@ -1,39 +1,49 @@
-/* Navbar.css */
-
-
+/* Navbar Styles */
 .navbar {
-    height: 20px; /* Set a fixed height for the navbar */
-    min-height: 33px; /* Ensure the navbar doesn't shrink below this height */
-    padding: 0.5rem 1rem; /* Adjust padding if needed */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+   
+    height: 38px;
+    position: fixed; /* Fixes the navbar to the top */
+    top: 0; /* Aligns the navbar to the top */
+    left: 0; /* Aligns the navbar to the left */
+    width: 100%; /* Makes the navbar span the full width of the viewport */
+    z-index: 1050; /* Ensures the navbar stays above other content */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+;
 }
 
-/* Adjust these sizes as needed */
+/* Adjust the spacing for the rest of the page content */
+.content {
+    padding-top: 40px; /* Adds space at the top to account for the fixed navbar */
+}
+
+/* Logo Styles */
 .navbar-logo {
-    width: 80px; /* Decrease the width of the logo */
-    height: auto; /* Maintain aspect ratio */
+    width: 80px;
+    height: auto;
 }
 
+/* Navbar Brand Styles */
 .navbar-brand {
     display: flex;
-    align-items: center;
+    align-items: start;
     color: #fff !important;
-    font-size: 0.8rem; /* Decrease the font size of navbar-brand */
-   
+    font-size: 0.8rem;
+    margin-right: auto; /* Pushes the nav links to the right */
 }
 
+/* Nav Link Styles */
 .nav-link {
-    font-size: 0.8rem; /* Decrease the font size of nav-links */
-    margin-right: 0.5rem; /* Decrease the margin-right for nav-links */
-    color: #fff !important;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    color: #ffffff !important;
 }
 
 .nav-link:hover {
-    color: #b3b3b3 !important;
+    color: #93d9fc !important;
 }
 
-
-
+/* Button Styles */
 .btn-outline-success {
     color: #28a745;
     border-color: #28a745;
@@ -45,11 +55,90 @@
     border-color: #28a745;
 }
 
-/* Smaller navbar height */
+/* Mobile Styles */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+    }
+
+    .navbar-brand {
+        font-size: 0.7rem; /* Smaller font size for brand on mobile */
+    }
+
+    .navbar-logo {
+        width: 60px; /* Adjust logo size for smaller screens */
+    }
+
+    .nav-link {
+        font-size: 0.7rem; /* Smaller font size for nav-links on mobile */
+        margin-right: 0.3rem; /* Adjust margin for nav-links */
+    }
+
+    .btn-outline-success {
+        font-size: 0.7rem; /* Smaller button font size */
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 577px) and (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 0.75rem; /* Adjust padding for tablet screens */
+    }
+
+    .navbar-brand {
+        font-size: 0.75rem; /* Slightly smaller font size for brand on tablets */
+    }
+
+    .navbar-logo {
+        width: 70px; /* Adjust logo size for tablets */
+    }
+
+    .nav-link {
+        font-size: 0.75rem; /* Slightly smaller font size for nav-links on tablets */
+        margin-right: 0.4rem; /* Adjust margin for nav-links */
+    }
+
+    .btn-outline-success {
+        font-size: 0.75rem; /* Smaller button font size */
+    }
+}
 
 
 
 
 
 
+/* Navbar.css */
 
+/* Basic styles for the navbar */
+.navbar {
+    background-color: #343a40; /* Dark background for the navbar */
+  }
+  
+
+  
+  /* Style for the navbar items */
+  .navbar-nav .nav-item .nav-link {
+    color: #ffffff; /* White text color for all links */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+  }
+  
+  /* Style for active link */
+  .navbar-nav .nav-item .nav-link.active {
+    color: #00aaff; /* Highlight color for active link */
+    font-weight: bold; /* Optional: make active link bold */
+    border-bottom: 2px solid #00aaff; /* Optional: underline active link */
+  }
+  
+  /* Optional: Hover effect for nav links */
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #00aaff; /* Color change on hover */
+  }
+  
+  /* Optional: Styles for navbar-toggler */
+  .navbar-toggler {
+    border: none; /* Remove border from toggler */
+  }
+  
+
+  

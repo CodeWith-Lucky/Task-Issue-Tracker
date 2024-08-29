@@ -4,17 +4,19 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 
-// Configuration for your SQL Server
+
+
 const config = {
-  user: process.env.DB_USER    ,    // Your database username
-  password:process.env.DB_PASSWORD,   // Your database password
-  server: process.env.DB_SERVER,       // Your database server address
-  database: process.env.DB_DATABASE,       // Your database name
+  user: "sa",    // Your database username
+  password:"1",   // Your database password
+  server: "DEVIL\\SQLEXPRESS",       // Your database server address
+  database:"urbanpostask",       // Your database name
   options: {
     encrypt: false,  // Use encryption for secure connections
     trustServerCertificate: true, // Use this for local development (not recommended for production)
   },
 };
+
 
 // Create a pool connection
 const poolPromise = sql.connect(config)

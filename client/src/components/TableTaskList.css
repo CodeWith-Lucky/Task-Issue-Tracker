@@ -27,6 +27,7 @@ h5{
     padding-top: -0px;
    height: calc(100vh - 100px); /* Adjust based on header + filter heights */
     overflow-y: auto;
+    overflow-x:  auto;
 }
 .filters-container {
     font-size: 0.7rem;
@@ -105,6 +106,35 @@ h5{
 }
 
 
+.table-container {
+    overflow-x: auto;
+}
+
+.table td,
+.table th {
+   
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px; /* Adjust max-width as needed */
+   
+}
+
+.table td:hover::after {
+    
+    position: absolute;
+    background-color: #aaa0a0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    z-index: 10;
+    max-width: 300px; /* Adjust tooltip max-width as needed */
+    white-space: normal;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.table td:hover {
+    position: relative; /* Required for absolute positioning of the tooltip */
+}
 
 
 /* TableTaskList.css */
@@ -187,6 +217,18 @@ h5{
 
 
 
+/* client view  */
+/* Custom Modal Styles */
+.custom-modal-dialog {
+    max-width: 80%; /* 80% of the screen width */
+    width: 80%; /* 80% of the screen width */
+}
+
+.custom-modal-content {
+    height: 80vh; /* 80% of the viewport height */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+    
+}
 
 
 
@@ -220,3 +262,57 @@ h5{
         padding: 10px; /* Increase padding for header */
     }
 }
+
+
+/* Media query for screens with a resolution of 1360x768 or smaller */
+@media (max-width: 1360px) and (max-height: 768px) {
+    /* Adjust font sizes and padding to fit smaller screen */
+    .filters-container {
+      font-size: 0.8rem;
+    }
+  
+    .filter-item {
+      flex: 1 1 calc(33.333% - 10px);
+      margin-bottom: 5px;
+    }
+  
+    .table-container {
+      font-size: 0.8rem;
+      height: calc(100vh - 120px);
+    }
+  
+    .table th,
+    .table td {
+      font-size: 0.8rem;
+      padding: 4px;
+    }
+  
+    .container.full {
+      padding: 0 10px;
+    }
+  
+    .header {
+      padding: 5px;
+    }
+  
+    /* Adjust table layout to fit smaller screen */
+    .table {
+      font-size: 0.7rem;
+    }
+  
+    .table td,
+    .table th {
+      padding: 2px;
+    }
+  
+    /* Adjust button sizes and padding */
+    .btn {
+      padding: 2px 4px;
+      font-size: 0.7rem;
+    }
+  
+    .btn-sm {
+      padding: 1px 2px;
+      font-size: 0.6rem;
+    }
+  }

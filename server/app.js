@@ -3,13 +3,13 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import router from './router/routerController.js';
 
-const port=8800;
+const port=3005;
 const app = express();
 
 
 app.use(cors({
-    origin: process.env.CORS_ORIGIN || "http://localhost:3000",
-    credentials: true
+    origin: "http://localhost:3000",
+    // credentials: true
   }));
   
 
